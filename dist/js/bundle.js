@@ -124,7 +124,7 @@ function play() {
             competitorChoice = Math.floor(Math.random() * 3);
         }
 
-        if (choice > 2 || choice < 0) {
+        if (!(choice < 2) || !(choice >= 0)) {
             alert('請輸入正確數字喔！');
             return 0;
         }
